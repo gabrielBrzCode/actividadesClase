@@ -1,0 +1,380 @@
+/* ESTO ES UN COMENTARIO EN CSS*/
+
+/* Guía paso a paso, qué les recomiendo yo para trabajar en css
+
+    1. verifique que haya vinculado bien su css al html
+
+    Ej:
+
+    body{
+    background-color: aqua;
+    }
+
+    2. Tengan un orden definido
+
+    CSS -> Hoja de estilos en cascada
+
+*/
+
+/* lo primero son las importaciones */
+@import url('https://fonts.cdnfonts.com/css/zilla-slab');
+
+
+/* Establecer las variables de css */
+/* Paleta de colores, tipografías, medidas que se repitan constantemente */
+
+
+/* 
+    Selectores: 
+        -Etiqueta: General
+        -Clases: un poco más específicas (varios elementos pueden tener la misma clase) -> .
+        -ID: sumamente específicos (cada elemento sólo puede tener uno) -> #
+    Pseudoclases: elementos propios de css que me hacen referencia a mi html -> características particulares -> :root
+
+    Pseudoelementos: -> ::after
+*/
+
+
+/* pseudoclase que me hace referencia a todo mi html root -> codíco raíz */
+:root{
+    --tipografia:'Zilla Slab', sans-serif;
+    --colorFondo:#E2DED7;
+    --colorClaro:#108BB2;
+    --colorTexto:#063A4C;
+    --colorContraste:#EE466F;
+}
+
+
+/* Condiciones iniciales */
+/* Los estilos que quiero en TODO MI SITIO WEB */
+
+
+/* *-> selector universal -> me aplica los estilos a TODO */
+*{
+    /* margin ->margen externo */
+    margin:0;
+    /* padding -> margen interno */
+    padding: 0;
+}
+
+body{
+    /* Ancho del tamaño de mi pantalla */
+    width: 100%;
+
+    /* background-color -> color de fondo */
+    background-color: var(--colorFondo);
+    /* tipografía */
+    font-family: var(--tipografia);
+    /* color de la letra */
+    color: var(--colorTexto);
+    /* Quitar el scroll horizontal 
+        overflow -> si se sobresale el contenido
+        hidden -> esconder
+    */
+    overflow-x: hidden;
+    /* ajuste a mis dimensiones */
+    box-sizing: border-box;
+}
+
+
+/* ---------HEADER------- */
+
+/* contenedor padre -> determinen dimensiones */
+header{
+    /* ancho */
+    /* vw -> ancho de pantalla
+        vh -> alto de pantalla
+    */
+    width: 100vw;
+    height: 100vh;
+}
+
+/* Lo que está dentro del header son hijos */
+
+.menuNav{
+    background-color: var(--colorClaro);
+    width: 100%;
+    height: 100px;
+}
+
+/* contenedor padre de las listas que quiero modificar una al lado del otro */
+.listaMenu{
+    height:100%;
+    /* disposición flexible -> los elementos uno al lado del otro */
+    display: flex;
+    /* centrar */
+    /* centra an x */
+    justify-content: center;
+    /* centrar en y */
+    align-items: center;
+    /* separeciones entre elementos hijos */
+    gap: 50px;
+    /* quitar viñetas de lista */
+    list-style: none;
+}
+
+.listaMenu a{
+    /* quitar la decoración del texto */
+    text-decoration: none;
+    /* color del texto */
+    color: var(--colorTexto);
+    /* tamaño de texto */
+    font-size: 18px;
+    /* más ancha la letra -> negrilla */
+    font-weight: bold;
+}
+
+.listaMenu a:hover{
+    color: white;
+}
+
+.logo{
+    /* ancho */
+    width: 50px;
+    /* alto */
+    height: 50px;
+}
+
+
+/* banner */
+/* contenedor padre de la imagen */
+.baner{
+    width: 100%;
+    height: 80%;
+}
+/* mi imagen ocupa todo el espacio de su padre */
+.baner img{
+    width: 100%;
+    height: 100%;
+}
+
+/* ---------MAIN------- */
+main{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* dispongan una debajo de la otra */
+    flex-direction: column;
+}
+
+/* Seccion 1 */
+.seccion1{
+    width: 80%;
+}
+#div-video{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+#div-video iframe{
+    width: 50%;
+}
+
+#div-video p{
+    width: 50%;
+}
+/* Seccion 2 */
+
+.seccion2{
+    width: 80%;
+}
+
+.contenedor-img{
+
+    /* organizar en filas y columnas */
+    display: grid;
+    /* filas */
+    /* 1fr -> me ocupe una fracción del espacio */
+    grid-template-rows: 1fr 1fr;
+
+    /* Columnas  */
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+}
+
+.contenedor-img img{
+    width: 100%;
+    height: 100%;
+}
+
+.titulo{
+    /* centrar texto */
+    text-align: center;
+    /* textos en mayúscula */
+    text-transform: uppercase;
+    /* margen arriba y abajo - derecha e izquierda */
+    margin: 20px 0px;
+}
+
+/* ---------FOOTER------- */
+ 
+/*DEFINIR CON BORDER SOLID 5PX Y UN COLOR para saber que estamos trabajando*/
+
+footer{
+
+
+/**dimensiones*/
+
+width: 100%;
+height: auto;
+/*aspectos generales ( padre)*/
+background-color: var(--colorClaro);
+margin-top: 50px;
+display: flex;
+justify-content: space-evenly;
+align-items: center;
+color: white;
+}
+.Fotologofooter{
+width: 100px;
+height: 100px;
+}
+.redesSociales{
+    
+text-align: center;
+
+}
+/*color de mis iconos de redes sociales, si deseo cambiar uno solo debo asignar 2da clase a la clase de la imagen*/
+i{color: white;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/**.container{
+   border: solid 10px red;
+    max-width: 1000px;
+    margin: auto;
+   
+ }
+
+ .footer{
+    border: solid 10px yellow;
+background-color: #3c3f42
+;
+padding: 80px 10px;
+
+ }
+
+ .footer-fila{
+    display: flex;
+    
+ }
+ .footer-links{
+width: 25%;
+padding: 0 15px;
+
+ }
+ .footer-links h4{
+font-size: 20px;
+color: rgb(0, 0, 0);
+margin-bottom: 25px;
+font-weight: 500;
+border-bottom: 2px solid #00c3ff;
+padding-bottom: 10px;
+display: inline-block;
+ }
+
+ .footer-links ul li a{
+font-size: 18px;
+text-decoration: none;
+color: rgb(141, 189, 10);
+display: block;
+margin-bottom: 15px;
+transition: all .3s ease;
+/* list-style: none; */
+ 
+ /**.footer-links ul li a:hover{
+color: #E2DED7;
+padding-left: 6px;
+
+ }
+ .social-link a{
+display: inline-block;
+    min-height: 30px;
+    width: 40px;
+    background-color: aqua;
+    margin: 0 10px 10 px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: #E2DED7;
+
+transition: all .5S ease;}
+
+.social-link a:hover{background-color:rgb(64, 0, 255);}
+
+
