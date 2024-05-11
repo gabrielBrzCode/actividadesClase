@@ -227,18 +227,18 @@ display: flex;
 justify-content: space-evenly;
 align-items: center;
 color: white;
-}
+
 .Fotologofooter{
 width: 100px;
 height: 100px;
 }
 .redesSociales{
-    
+   color: white; 
 text-align: center;
 
-}
+
 /*color de mis iconos de redes sociales, si deseo cambiar uno solo debo asignar 2da clase a la clase de la imagen*/
-i{color: white;}
+/* i{color: white;} */
 
 
 
