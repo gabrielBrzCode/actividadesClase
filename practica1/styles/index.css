@@ -23,7 +23,9 @@
 }
 
 body {
-    background-color: #5f5151;
+    background-color: black;
+
+
     width: 100vw;
     height: auto;
     overflow-x: hidden;
@@ -33,13 +35,18 @@ body {
 
 header {
 
-    background-color: #000000;
+    background-color: black;
     width: 100%;
     height: 100%;
 }
 
+main {
+    width: 100%;
+    height: 100%;
+
+}
 .menuNavegacion {
-    background-color: #242323;
+    background-color: #050303;
     width: 100%;
     height: 100%;
     display: flex;
@@ -52,8 +59,9 @@ header {
 }
 
 .imalogo {
-    width: 130px;
-    height: 130px;
+    margin-top: 50px;
+    width: 150px;
+    height: 150px;
     border-radius: 40%;
 
 }
@@ -95,12 +103,15 @@ header {
 
 .lista ul {
 
-
-    display: flex;
+background-color: rgb(0, 0, 0);
+    height:15vh;
+display: flex;
     justify-content: center;
     gap: 50px;
     list-style: none;
     padding-top: 40px;
+  
+  
 
 
 }
@@ -109,22 +120,24 @@ header {
     font-size: 30px;
     list-style: none;
     text-decoration: none;
-
+    font-family: 'Nugget', sans-serif;
 }
 .NumeroCel ul i {
-    color: green;
+    color: rgb(72, 157, 72);
 }
 
 .lista a {
-    color: #ffffff;
+    color: rgba(140, 66, 196, 0.747);
+
     font-size: 20px;
+    font-weight: bold;
     text-decoration: none;
     font-family: 'Nugget', sans-serif;
 
 }
 
 .lista a:hover {
-    color: rgb(114, 29, 183);
+    color: rgb(255, 255, 255);
 }
 
 .baner {
@@ -132,28 +145,25 @@ header {
 justify-content: center;
     width: 100%;
     height: 100%;
-    margin: 20px 20px;
+    margin: 10px 10px;
+   
 }
 
 .img-baner {
-    width: 50vw;
-    height: 100vh;
+    width: 70vw;
+    height: 80vh;
  object-fit: fill;
   margin-top: 20px;
-  margin-bottom: 0px;
-  margin-left: 30px;
-  margin-right: 40px;
+  margin-bottom: 50px;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
-main {
-    border: solid green;
-    width: 100%;
-    padding: 100px;
-}
+
 
 .containerPadre {
-    border: solid red;
-    width: 80vw;
+ 
+    width: 70%;
     height: 100%;
     margin: auto;
 
@@ -161,21 +171,31 @@ main {
 }
 
 .containerPadre h1 {
-    font-size: 40px;
+    font-size: 50px;
+    font-family:'November Mornings', sans-serif;
+    color: white;
+    font-weight: 50;
+    text-align: center;
 
+}
+.containerPadre p{
+    color: #ffffff;
+   font-family: 'Nugget', sans-serif;
+   font-size: 15px;
+   text-align: center;
 }
 
 .container-imagenes {
     width: 100%;
-    height: 100%;
+    height: 1800px;
     margin-top: 50px;
     border-radius: 10px;
-    /* define qué pasa con el contenido que sobre sale */
+    border: solid white;
     overflow: hidden;
     display: grid;
-    grid-template-rows: repeat(4, 1fr);
+    grid-template-rows: repeat(22, 1fr);
     grid-template-columns: repeat(4, 1fr);
-    gap: 20px;
+    gap: 5px;
 }
 
 .container-imagenes img {
