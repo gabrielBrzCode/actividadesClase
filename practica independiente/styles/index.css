@@ -1,5 +1,5 @@
 @import url('https://fonts.cdnfonts.com/css/martian-mono');
-@import url('https://fonts.cdnfonts.com/css/vilanders-sans');
+@import url('https://fonts.cdnfonts.com/css/helvetica-now-mt-micro');
 
 * {
     margin: 0;
@@ -41,8 +41,8 @@ header {
 .menunav a {
     display: flex;
     align-items: center;
-    justify-content: flex-start;
-    gap: 200px;
+    
+    gap: 230px;
     text-decoration: none;
     list-style: none;
 
@@ -60,9 +60,8 @@ header {
 
 .p-logo {
 
-    color: aliceblue;
-    font-family: 'Vilanders Sans', sans-serif;
-
+    color: rgb(255, 255, 255);
+    font-family: 'Helvetica Now MT Micro', sans-serif;
     text-align: center;
     font-size: 50px;
     line-height: 1;
@@ -74,7 +73,7 @@ header {
     padding: 8px 20px;
     background: linear-gradient(90deg,
             rgb(53, 219, 186) 0%,
-            rgb(151, 233, 116) 100%);
+            rgb(151, 233, 116) 70%);
 
     text-transform: uppercase;
     font-size: 15px;
@@ -82,7 +81,7 @@ header {
 }
 
 .boton li:hover {
-    color: rgba(0, 0, 0, 0.556);
+    color: rgb(40, 39, 39);
 }
 
 .listacontacto {
@@ -127,8 +126,10 @@ video {
     left: 0;
     width: 100%;
     height: 100%;
-    background: #1c1c1d;
-    opacity: 0.3;
+    background: #65c4d1;
+    opacity: 0.7;
     mix-blend-mode: overlay;
 
 }
+
+
