@@ -3,15 +3,26 @@ padding: 0;}
 
 .miCarrusel{
     width: 100%;
-    height: 50vh;
+    height: 70vh;
 
 }
 
 .miCarrusel img{
     width: 100%;
-    height: 50vh;
+    height: 70vh;
     /* mejorar la vista de la imagen */
     object-fit: cover;
     /* posision de la imagen */
     object-position: top;
+}
+
+/* mis logos */
+
+.misLogos img{
+width: 100px;
+height: 100px;
+
+}
+.col-12, .col-4, .col-6{
+    text-align: center;
 }
