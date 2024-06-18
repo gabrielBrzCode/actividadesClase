@@ -39,3 +39,7 @@ const esFalso = false;
 // se reconocen por el uso de [] y los datos se separan por comas
 let arregloNumeros = [5, 6, 7 ,3];
 const arregloNombres = [luisa, daniel, gabriel];
+
+// para entrada de datos podemos usar PROMPT
+// Para SALIDA alert o console.log
+//parseint 1000
